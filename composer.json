@@ -1,0 +1,14 @@
+{
+    "name": "root/mindk.dev",
+    "authors": [
+        {
+            "name": "DemisGE",
+            "email": "demisge@rambler.ru"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
