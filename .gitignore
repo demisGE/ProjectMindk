@@ -1,3 +1,4 @@
-/vendor
 /.idea
-/config/config.php
+db.php
+/vendor/composer
+autoload.php

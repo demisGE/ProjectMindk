@@ -8,12 +8,5 @@
 
 return [
     "name" => "Mindk.dev",
-    "db" => [
-        "driver" => "mysql",
-        "host" => "localhost",
-        "db_name" => "shop",
-        "user" => "root",
-        "password" => "admin",
-    ]
-
+    "DB" => include ('db.php'),
 ];

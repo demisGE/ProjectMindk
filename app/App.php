@@ -9,6 +9,9 @@
 namespace App;
 
 
+use DB\ConnectionFactory;
+use DB\MySqlConnector;
+
 class App
 {
     public $config = [];
@@ -16,15 +19,18 @@ class App
     public function  __construct($config = [])
     {
         $this->config = $config;
+
     }
 
     public function run()
     {
-        echo 'method run' . '<br>';
+        $mysql = ConnectionFactory::factory($this->config);
+        $query = $mysql->query("SELECT * FROM name");
+        var_dump($mysql->fetch($query));
     }
 
     public function done()
     {
-        echo 'method done' . '<br>';
+        //echo 'method done' . '<br>';
     }
 }
